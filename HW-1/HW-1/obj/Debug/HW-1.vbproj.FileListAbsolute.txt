@@ -1,0 +1,12 @@
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\bin\Debug\HW-1.exe.config
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\bin\Debug\HW-1.exe
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\bin\Debug\HW-1.pdb
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\bin\Debug\HW-1.xml
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.vbproj.AssemblyReference.cache
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW_1.frmFitnessPlans.resources
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW_1.Resources.resources
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.vbproj.GenerateResource.cache
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.vbproj.CoreCompileInputs.cache
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.exe
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.xml
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.pdb

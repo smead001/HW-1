@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmSummary.Designer.vb">
+      <DependentUpon>frmSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmFitnessPlans.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmFitnessPlans.resx">
       <DependentUpon>frmFitnessPlans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSummary.resx">
+      <DependentUpon>frmSummary.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -22,13 +22,14 @@ Partial Class frmFitnessPlans
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblBasic = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -56,9 +57,12 @@ Partial Class frmFitnessPlans
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picFitness = New System.Windows.Forms.PictureBox()
+        Me.btnSummary = New System.Windows.Forms.Button()
+        Me.errP = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.grpPlanChoices.SuspendLayout()
         Me.grpTrainer.SuspendLayout()
         CType(Me.picFitness, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errP, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -124,15 +128,15 @@ Partial Class frmFitnessPlans
         Me.Label6.Text = "Family Level"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label7
+        'lblBasic
         '
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(6, 2)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(87, 34)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Basic"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblBasic.BackColor = System.Drawing.Color.Transparent
+        Me.lblBasic.Location = New System.Drawing.Point(6, 2)
+        Me.lblBasic.Name = "lblBasic"
+        Me.lblBasic.Size = New System.Drawing.Size(87, 34)
+        Me.lblBasic.TabIndex = 6
+        Me.lblBasic.Text = "Basic"
+        Me.lblBasic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label8
         '
@@ -175,7 +179,7 @@ Partial Class frmFitnessPlans
         Me.grpPlanChoices.Controls.Add(Me.Label9)
         Me.grpPlanChoices.Controls.Add(Me.Label10)
         Me.grpPlanChoices.Controls.Add(Me.Label8)
-        Me.grpPlanChoices.Controls.Add(Me.Label7)
+        Me.grpPlanChoices.Controls.Add(Me.lblBasic)
         Me.grpPlanChoices.Controls.Add(Me.radPreferredFamily)
         Me.grpPlanChoices.Controls.Add(Me.radBasicPlusFamily)
         Me.grpPlanChoices.Controls.Add(Me.radBasicFamily)
@@ -238,7 +242,6 @@ Partial Class frmFitnessPlans
         Me.radDeluxeFamily.Name = "radDeluxeFamily"
         Me.radDeluxeFamily.Size = New System.Drawing.Size(58, 17)
         Me.radDeluxeFamily.TabIndex = 25
-        Me.radDeluxeFamily.TabStop = True
         Me.radDeluxeFamily.Text = "$60.00"
         Me.radDeluxeFamily.UseVisualStyleBackColor = False
         '
@@ -250,7 +253,6 @@ Partial Class frmFitnessPlans
         Me.radPreferredFamily.Name = "radPreferredFamily"
         Me.radPreferredFamily.Size = New System.Drawing.Size(58, 17)
         Me.radPreferredFamily.TabIndex = 24
-        Me.radPreferredFamily.TabStop = True
         Me.radPreferredFamily.Text = "$48.00"
         Me.radPreferredFamily.UseVisualStyleBackColor = False
         '
@@ -262,7 +264,6 @@ Partial Class frmFitnessPlans
         Me.radBasicPlusFamily.Name = "radBasicPlusFamily"
         Me.radBasicPlusFamily.Size = New System.Drawing.Size(58, 17)
         Me.radBasicPlusFamily.TabIndex = 23
-        Me.radBasicPlusFamily.TabStop = True
         Me.radBasicPlusFamily.Text = "$23.00"
         Me.radBasicPlusFamily.UseVisualStyleBackColor = False
         '
@@ -274,7 +275,6 @@ Partial Class frmFitnessPlans
         Me.radBasicFamily.Name = "radBasicFamily"
         Me.radBasicFamily.Size = New System.Drawing.Size(58, 17)
         Me.radBasicFamily.TabIndex = 22
-        Me.radBasicFamily.TabStop = True
         Me.radBasicFamily.Text = "$24.95"
         Me.radBasicFamily.UseVisualStyleBackColor = False
         '
@@ -286,7 +286,6 @@ Partial Class frmFitnessPlans
         Me.radDeluxeInd.Name = "radDeluxeInd"
         Me.radDeluxeInd.Size = New System.Drawing.Size(58, 17)
         Me.radDeluxeInd.TabIndex = 3
-        Me.radDeluxeInd.TabStop = True
         Me.radDeluxeInd.Text = "$45.95"
         Me.radDeluxeInd.UseVisualStyleBackColor = False
         '
@@ -298,7 +297,6 @@ Partial Class frmFitnessPlans
         Me.radPreferredInd.Name = "radPreferredInd"
         Me.radPreferredInd.Size = New System.Drawing.Size(52, 17)
         Me.radPreferredInd.TabIndex = 2
-        Me.radPreferredInd.TabStop = True
         Me.radPreferredInd.Text = "35.95"
         Me.radPreferredInd.UseVisualStyleBackColor = False
         '
@@ -310,7 +308,6 @@ Partial Class frmFitnessPlans
         Me.radBasicPlusInd.Name = "radBasicPlusInd"
         Me.radBasicPlusInd.Size = New System.Drawing.Size(58, 17)
         Me.radBasicPlusInd.TabIndex = 1
-        Me.radBasicPlusInd.TabStop = True
         Me.radBasicPlusInd.Text = "$26.95"
         Me.radBasicPlusInd.UseVisualStyleBackColor = False
         '
@@ -412,7 +409,7 @@ Partial Class frmFitnessPlans
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(361, 505)
+        Me.btnClear.Location = New System.Drawing.Point(350, 581)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(87, 37)
         Me.btnClear.TabIndex = 22
@@ -421,7 +418,7 @@ Partial Class frmFitnessPlans
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(462, 507)
+        Me.btnExit.Location = New System.Drawing.Point(462, 581)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(84, 35)
         Me.btnExit.TabIndex = 23
@@ -438,11 +435,26 @@ Partial Class frmFitnessPlans
         Me.picFitness.TabIndex = 24
         Me.picFitness.TabStop = False
         '
+        'btnSummary
+        '
+        Me.btnSummary.Location = New System.Drawing.Point(392, 503)
+        Me.btnSummary.Name = "btnSummary"
+        Me.btnSummary.Size = New System.Drawing.Size(153, 37)
+        Me.btnSummary.TabIndex = 25
+        Me.btnSummary.Text = "Summary"
+        Me.btnSummary.UseVisualStyleBackColor = True
+        '
+        'errP
+        '
+        Me.errP.ContainerControl = Me
+        '
         'frmFitnessPlans
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(865, 659)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.btnSummary)
         Me.Controls.Add(Me.picFitness)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
@@ -464,6 +476,7 @@ Partial Class frmFitnessPlans
         Me.grpTrainer.ResumeLayout(False)
         Me.grpTrainer.PerformLayout()
         CType(Me.picFitness, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errP, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -475,7 +488,7 @@ Partial Class frmFitnessPlans
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lblBasic As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
@@ -503,4 +516,6 @@ Partial Class frmFitnessPlans
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents picFitness As PictureBox
+    Friend WithEvents btnSummary As Button
+    Friend WithEvents errP As ErrorProvider
 End Class

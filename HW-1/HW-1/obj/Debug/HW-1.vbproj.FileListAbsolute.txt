@@ -10,3 +10,4 @@ C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.vbproj.CoreCompile
 C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.exe
 C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.xml
 C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW-1.pdb
+C:\Users\Xenes\Documents\GitHub\HW-1\HW-1\HW-1\obj\Debug\HW_1.frmSummary.resources

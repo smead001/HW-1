@@ -55,14 +55,16 @@ Partial Class frmFitnessPlans
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.picFitness = New System.Windows.Forms.PictureBox()
         Me.grpPlanChoices.SuspendLayout()
         Me.grpTrainer.SuspendLayout()
+        CType(Me.picFitness, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(101, 24)
+        Me.Label1.Location = New System.Drawing.Point(256, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(429, 61)
         Me.Label1.TabIndex = 0
@@ -294,10 +296,10 @@ Partial Class frmFitnessPlans
         Me.radPreferredInd.BackColor = System.Drawing.Color.Transparent
         Me.radPreferredInd.Location = New System.Drawing.Point(344, 105)
         Me.radPreferredInd.Name = "radPreferredInd"
-        Me.radPreferredInd.Size = New System.Drawing.Size(58, 17)
+        Me.radPreferredInd.Size = New System.Drawing.Size(52, 17)
         Me.radPreferredInd.TabIndex = 2
         Me.radPreferredInd.TabStop = True
-        Me.radPreferredInd.Text = "$26.95"
+        Me.radPreferredInd.Text = "35.95"
         Me.radPreferredInd.UseVisualStyleBackColor = False
         '
         'radBasicPlusInd
@@ -320,7 +322,6 @@ Partial Class frmFitnessPlans
         Me.radBasicInd.Name = "radBasicInd"
         Me.radBasicInd.Size = New System.Drawing.Size(58, 17)
         Me.radBasicInd.TabIndex = 0
-        Me.radBasicInd.TabStop = True
         Me.radBasicInd.Text = "$14.95"
         Me.radBasicInd.UseVisualStyleBackColor = False
         '
@@ -427,11 +428,22 @@ Partial Class frmFitnessPlans
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'picFitness
+        '
+        Me.picFitness.Image = Global.HW_1.My.Resources.Resources.FitnessPic
+        Me.picFitness.Location = New System.Drawing.Point(577, 131)
+        Me.picFitness.Name = "picFitness"
+        Me.picFitness.Size = New System.Drawing.Size(266, 357)
+        Me.picFitness.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picFitness.TabIndex = 24
+        Me.picFitness.TabStop = False
+        '
         'frmFitnessPlans
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(865, 659)
+        Me.Controls.Add(Me.picFitness)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lblTotal)
@@ -445,11 +457,13 @@ Partial Class frmFitnessPlans
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmFitnessPlans"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fitness Plan Information"
         Me.grpPlanChoices.ResumeLayout(False)
         Me.grpPlanChoices.PerformLayout()
         Me.grpTrainer.ResumeLayout(False)
         Me.grpTrainer.PerformLayout()
+        CType(Me.picFitness, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -488,4 +502,5 @@ Partial Class frmFitnessPlans
     Friend WithEvents radTrainerInd As RadioButton
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents picFitness As PictureBox
 End Class

@@ -33,24 +33,28 @@ Partial Class frmFitnessPlans
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.grpPlanChoices = New System.Windows.Forms.GroupBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.radBasicInd = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.radDeluxeFamily = New System.Windows.Forms.RadioButton()
+        Me.radPreferredFamily = New System.Windows.Forms.RadioButton()
+        Me.radBasicPlusFamily = New System.Windows.Forms.RadioButton()
+        Me.radBasicFamily = New System.Windows.Forms.RadioButton()
+        Me.radDeluxeInd = New System.Windows.Forms.RadioButton()
+        Me.radPreferredInd = New System.Windows.Forms.RadioButton()
+        Me.radBasicPlusInd = New System.Windows.Forms.RadioButton()
+        Me.radBasicInd = New System.Windows.Forms.RadioButton()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.chkTrainer = New System.Windows.Forms.CheckBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.grpTrainer = New System.Windows.Forms.GroupBox()
+        Me.radTrainerFamily = New System.Windows.Forms.RadioButton()
+        Me.radTrainerInd = New System.Windows.Forms.RadioButton()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.grpPlanChoices.SuspendLayout()
         Me.grpTrainer.SuspendLayout()
         Me.SuspendLayout()
@@ -165,139 +169,23 @@ Partial Class frmFitnessPlans
         Me.grpPlanChoices.Controls.Add(Me.Label11)
         Me.grpPlanChoices.Controls.Add(Me.Label13)
         Me.grpPlanChoices.Controls.Add(Me.Label22)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton8)
+        Me.grpPlanChoices.Controls.Add(Me.radDeluxeFamily)
         Me.grpPlanChoices.Controls.Add(Me.Label9)
         Me.grpPlanChoices.Controls.Add(Me.Label10)
         Me.grpPlanChoices.Controls.Add(Me.Label8)
         Me.grpPlanChoices.Controls.Add(Me.Label7)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton7)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton4)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton2)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton6)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton5)
-        Me.grpPlanChoices.Controls.Add(Me.RadioButton3)
+        Me.grpPlanChoices.Controls.Add(Me.radPreferredFamily)
+        Me.grpPlanChoices.Controls.Add(Me.radBasicPlusFamily)
+        Me.grpPlanChoices.Controls.Add(Me.radBasicFamily)
+        Me.grpPlanChoices.Controls.Add(Me.radDeluxeInd)
+        Me.grpPlanChoices.Controls.Add(Me.radPreferredInd)
+        Me.grpPlanChoices.Controls.Add(Me.radBasicPlusInd)
         Me.grpPlanChoices.Controls.Add(Me.radBasicInd)
         Me.grpPlanChoices.Location = New System.Drawing.Point(28, 182)
         Me.grpPlanChoices.Name = "grpPlanChoices"
         Me.grpPlanChoices.Size = New System.Drawing.Size(518, 194)
         Me.grpPlanChoices.TabIndex = 18
         Me.grpPlanChoices.TabStop = False
-        '
-        'Label22
-        '
-        Me.Label22.BackColor = System.Drawing.Color.Transparent
-        Me.Label22.Location = New System.Drawing.Point(6, 148)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(87, 34)
-        Me.Label22.TabIndex = 19
-        Me.Label22.Text = "Deluxe"
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'radBasicInd
-        '
-        Me.radBasicInd.AutoSize = True
-        Me.radBasicInd.BackColor = System.Drawing.Color.Transparent
-        Me.radBasicInd.Location = New System.Drawing.Point(344, 11)
-        Me.radBasicInd.Name = "radBasicInd"
-        Me.radBasicInd.Size = New System.Drawing.Size(58, 17)
-        Me.radBasicInd.TabIndex = 0
-        Me.radBasicInd.TabStop = True
-        Me.radBasicInd.Text = "$14.95"
-        Me.radBasicInd.UseVisualStyleBackColor = False
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton3.Location = New System.Drawing.Point(344, 57)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton3.TabIndex = 1
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "$26.95"
-        Me.RadioButton3.UseVisualStyleBackColor = False
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton5.Location = New System.Drawing.Point(344, 105)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton5.TabIndex = 2
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "$26.95"
-        Me.RadioButton5.UseVisualStyleBackColor = False
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton6.Location = New System.Drawing.Point(344, 157)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton6.TabIndex = 3
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "$45.95"
-        Me.RadioButton6.UseVisualStyleBackColor = False
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton2.Location = New System.Drawing.Point(444, 11)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton2.TabIndex = 22
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "$24.95"
-        Me.RadioButton2.UseVisualStyleBackColor = False
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton4.Location = New System.Drawing.Point(444, 57)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton4.TabIndex = 23
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "$23.00"
-        Me.RadioButton4.UseVisualStyleBackColor = False
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton7.Location = New System.Drawing.Point(444, 105)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton7.TabIndex = 24
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "$48.00"
-        Me.RadioButton7.UseVisualStyleBackColor = False
-        '
-        'RadioButton8
-        '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton8.Location = New System.Drawing.Point(444, 157)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton8.TabIndex = 25
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "$60.00"
-        Me.RadioButton8.UseVisualStyleBackColor = False
-        '
-        'Label11
-        '
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Location = New System.Drawing.Point(93, 48)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(232, 34)
-        Me.Label11.TabIndex = 26
-        Me.Label11.Text = "Use of gym facilities and locker room with basic equipment only"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label12
         '
@@ -310,6 +198,16 @@ Partial Class frmFitnessPlans
     "ents at the smoothie bar"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Location = New System.Drawing.Point(93, 48)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(232, 34)
+        Me.Label11.TabIndex = 26
+        Me.Label11.Text = "Use of gym facilities and locker room with basic equipment only"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label13
         '
         Me.Label13.BackColor = System.Drawing.Color.Transparent
@@ -319,6 +217,112 @@ Partial Class frmFitnessPlans
         Me.Label13.TabIndex = 28
         Me.Label13.Text = "Use of gym facilities and locker room with advanced equipment"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label22
+        '
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
+        Me.Label22.Location = New System.Drawing.Point(6, 148)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(87, 34)
+        Me.Label22.TabIndex = 19
+        Me.Label22.Text = "Deluxe"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'radDeluxeFamily
+        '
+        Me.radDeluxeFamily.AutoSize = True
+        Me.radDeluxeFamily.BackColor = System.Drawing.Color.Transparent
+        Me.radDeluxeFamily.Location = New System.Drawing.Point(444, 157)
+        Me.radDeluxeFamily.Name = "radDeluxeFamily"
+        Me.radDeluxeFamily.Size = New System.Drawing.Size(58, 17)
+        Me.radDeluxeFamily.TabIndex = 25
+        Me.radDeluxeFamily.TabStop = True
+        Me.radDeluxeFamily.Text = "$60.00"
+        Me.radDeluxeFamily.UseVisualStyleBackColor = False
+        '
+        'radPreferredFamily
+        '
+        Me.radPreferredFamily.AutoSize = True
+        Me.radPreferredFamily.BackColor = System.Drawing.Color.Transparent
+        Me.radPreferredFamily.Location = New System.Drawing.Point(444, 105)
+        Me.radPreferredFamily.Name = "radPreferredFamily"
+        Me.radPreferredFamily.Size = New System.Drawing.Size(58, 17)
+        Me.radPreferredFamily.TabIndex = 24
+        Me.radPreferredFamily.TabStop = True
+        Me.radPreferredFamily.Text = "$48.00"
+        Me.radPreferredFamily.UseVisualStyleBackColor = False
+        '
+        'radBasicPlusFamily
+        '
+        Me.radBasicPlusFamily.AutoSize = True
+        Me.radBasicPlusFamily.BackColor = System.Drawing.Color.Transparent
+        Me.radBasicPlusFamily.Location = New System.Drawing.Point(444, 57)
+        Me.radBasicPlusFamily.Name = "radBasicPlusFamily"
+        Me.radBasicPlusFamily.Size = New System.Drawing.Size(58, 17)
+        Me.radBasicPlusFamily.TabIndex = 23
+        Me.radBasicPlusFamily.TabStop = True
+        Me.radBasicPlusFamily.Text = "$23.00"
+        Me.radBasicPlusFamily.UseVisualStyleBackColor = False
+        '
+        'radBasicFamily
+        '
+        Me.radBasicFamily.AutoSize = True
+        Me.radBasicFamily.BackColor = System.Drawing.Color.Transparent
+        Me.radBasicFamily.Location = New System.Drawing.Point(444, 11)
+        Me.radBasicFamily.Name = "radBasicFamily"
+        Me.radBasicFamily.Size = New System.Drawing.Size(58, 17)
+        Me.radBasicFamily.TabIndex = 22
+        Me.radBasicFamily.TabStop = True
+        Me.radBasicFamily.Text = "$24.95"
+        Me.radBasicFamily.UseVisualStyleBackColor = False
+        '
+        'radDeluxeInd
+        '
+        Me.radDeluxeInd.AutoSize = True
+        Me.radDeluxeInd.BackColor = System.Drawing.Color.Transparent
+        Me.radDeluxeInd.Location = New System.Drawing.Point(344, 157)
+        Me.radDeluxeInd.Name = "radDeluxeInd"
+        Me.radDeluxeInd.Size = New System.Drawing.Size(58, 17)
+        Me.radDeluxeInd.TabIndex = 3
+        Me.radDeluxeInd.TabStop = True
+        Me.radDeluxeInd.Text = "$45.95"
+        Me.radDeluxeInd.UseVisualStyleBackColor = False
+        '
+        'radPreferredInd
+        '
+        Me.radPreferredInd.AutoSize = True
+        Me.radPreferredInd.BackColor = System.Drawing.Color.Transparent
+        Me.radPreferredInd.Location = New System.Drawing.Point(344, 105)
+        Me.radPreferredInd.Name = "radPreferredInd"
+        Me.radPreferredInd.Size = New System.Drawing.Size(58, 17)
+        Me.radPreferredInd.TabIndex = 2
+        Me.radPreferredInd.TabStop = True
+        Me.radPreferredInd.Text = "$26.95"
+        Me.radPreferredInd.UseVisualStyleBackColor = False
+        '
+        'radBasicPlusInd
+        '
+        Me.radBasicPlusInd.AutoSize = True
+        Me.radBasicPlusInd.BackColor = System.Drawing.Color.Transparent
+        Me.radBasicPlusInd.Location = New System.Drawing.Point(344, 57)
+        Me.radBasicPlusInd.Name = "radBasicPlusInd"
+        Me.radBasicPlusInd.Size = New System.Drawing.Size(58, 17)
+        Me.radBasicPlusInd.TabIndex = 1
+        Me.radBasicPlusInd.TabStop = True
+        Me.radBasicPlusInd.Text = "$26.95"
+        Me.radBasicPlusInd.UseVisualStyleBackColor = False
+        '
+        'radBasicInd
+        '
+        Me.radBasicInd.AutoSize = True
+        Me.radBasicInd.BackColor = System.Drawing.Color.Transparent
+        Me.radBasicInd.Location = New System.Drawing.Point(344, 11)
+        Me.radBasicInd.Name = "radBasicInd"
+        Me.radBasicInd.Size = New System.Drawing.Size(58, 17)
+        Me.radBasicInd.TabIndex = 0
+        Me.radBasicInd.TabStop = True
+        Me.radBasicInd.Text = "$14.95"
+        Me.radBasicInd.UseVisualStyleBackColor = False
         '
         'Label14
         '
@@ -342,39 +346,19 @@ Partial Class frmFitnessPlans
         'chkTrainer
         '
         Me.chkTrainer.AutoSize = True
-        Me.chkTrainer.Location = New System.Drawing.Point(351, 41)
+        Me.chkTrainer.Location = New System.Drawing.Point(351, 16)
         Me.chkTrainer.Name = "chkTrainer"
         Me.chkTrainer.Size = New System.Drawing.Size(151, 17)
         Me.chkTrainer.TabIndex = 31
         Me.chkTrainer.Text = "Optional Personal Trainer?"
         Me.chkTrainer.UseVisualStyleBackColor = True
         '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Location = New System.Drawing.Point(452, 16)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(40, 13)
-        Me.Label16.TabIndex = 19
-        Me.Label16.Text = "$25.00"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Location = New System.Drawing.Point(348, 16)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(40, 13)
-        Me.Label17.TabIndex = 20
-        Me.Label17.Text = "$20.00"
-        '
         'grpTrainer
         '
         Me.grpTrainer.BackColor = System.Drawing.Color.White
-        Me.grpTrainer.Controls.Add(Me.Label16)
+        Me.grpTrainer.Controls.Add(Me.radTrainerFamily)
         Me.grpTrainer.Controls.Add(Me.Label14)
-        Me.grpTrainer.Controls.Add(Me.Label17)
+        Me.grpTrainer.Controls.Add(Me.radTrainerInd)
         Me.grpTrainer.Controls.Add(Me.Label15)
         Me.grpTrainer.Controls.Add(Me.chkTrainer)
         Me.grpTrainer.Location = New System.Drawing.Point(28, 382)
@@ -383,11 +367,75 @@ Partial Class frmFitnessPlans
         Me.grpTrainer.TabIndex = 19
         Me.grpTrainer.TabStop = False
         '
+        'radTrainerFamily
+        '
+        Me.radTrainerFamily.AutoSize = True
+        Me.radTrainerFamily.Location = New System.Drawing.Point(444, 39)
+        Me.radTrainerFamily.Name = "radTrainerFamily"
+        Me.radTrainerFamily.Size = New System.Drawing.Size(58, 17)
+        Me.radTrainerFamily.TabIndex = 25
+        Me.radTrainerFamily.TabStop = True
+        Me.radTrainerFamily.Text = "$25.00"
+        Me.radTrainerFamily.UseVisualStyleBackColor = True
+        Me.radTrainerFamily.Visible = False
+        '
+        'radTrainerInd
+        '
+        Me.radTrainerInd.AutoSize = True
+        Me.radTrainerInd.Location = New System.Drawing.Point(344, 39)
+        Me.radTrainerInd.Name = "radTrainerInd"
+        Me.radTrainerInd.Size = New System.Drawing.Size(58, 17)
+        Me.radTrainerInd.TabIndex = 24
+        Me.radTrainerInd.TabStop = True
+        Me.radTrainerInd.Text = "$20.00"
+        Me.radTrainerInd.UseVisualStyleBackColor = True
+        Me.radTrainerInd.Visible = False
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(288, 465)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(95, 13)
+        Me.Label18.TabIndex = 20
+        Me.Label18.Text = "Total Monthly Fee:"
+        '
+        'lblTotal
+        '
+        Me.lblTotal.BackColor = System.Drawing.Color.White
+        Me.lblTotal.Location = New System.Drawing.Point(389, 457)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(156, 31)
+        Me.lblTotal.TabIndex = 21
+        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(361, 505)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(87, 37)
+        Me.btnClear.TabIndex = 22
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(462, 507)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(84, 35)
+        Me.btnExit.TabIndex = 23
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'frmFitnessPlans
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(773, 582)
+        Me.ClientSize = New System.Drawing.Size(865, 659)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.lblTotal)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.grpTrainer)
         Me.Controls.Add(Me.grpPlanChoices)
         Me.Controls.Add(Me.Label6)
@@ -420,20 +468,24 @@ Partial Class frmFitnessPlans
     Friend WithEvents grpPlanChoices As GroupBox
     Friend WithEvents Label22 As Label
     Friend WithEvents radBasicInd As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents radDeluxeInd As RadioButton
+    Friend WithEvents radPreferredInd As RadioButton
+    Friend WithEvents radBasicPlusInd As RadioButton
+    Friend WithEvents radDeluxeFamily As RadioButton
+    Friend WithEvents radPreferredFamily As RadioButton
+    Friend WithEvents radBasicPlusFamily As RadioButton
+    Friend WithEvents radBasicFamily As RadioButton
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents chkTrainer As CheckBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents grpTrainer As GroupBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents radTrainerFamily As RadioButton
+    Friend WithEvents radTrainerInd As RadioButton
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
 End Class

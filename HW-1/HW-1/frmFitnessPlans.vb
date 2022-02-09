@@ -2,6 +2,7 @@
     Private arrRadPlans(7) As RadioButton
     Private arrRadTrainers(1) As RadioButton
     Private arrPlanCosts(7) As Single
+    Private arrTrainerPlans(1) As Single
     Private Const BASIC_IND As Single = 14.95
     Private Const BASIC_FAMILY As Single = 24.95
     Private Const BASICPLUS_IND As Single = 26.95
@@ -37,6 +38,9 @@
         arrPlanCosts(6) = DELUXE_IND
         arrPlanCosts(7) = DELXUE_FAMILY
 
+        arrTrainerPlans(0) = IND_TRAINER
+        arrTrainerPlans(1) = FAMILY_TRAINER
+
 
     End Sub
 
@@ -60,17 +64,37 @@
         Application.Exit()
     End Sub
 
-    Private Sub radPlanCosts_CheckedChanged(sender As Object, e As EventArgs) Handles radBasicInd.CheckedChanged, radBasicFamily.CheckedChanged, radBasicPlusInd.CheckedChanged,
-            radBasicFamily.CheckedChanged, radPreferredInd.CheckedChanged, radPreferredFamily.CheckedChanged, radDeluxeInd.CheckedChanged, radDeluxeFamily.CheckedChanged
+    Private Sub radPlanCosts_CheckedChanged(sender As Object, e As EventArgs) Handles radBasicInd.CheckedChanged, radBasicFamily.CheckedChanged,
+        radBasicPlusInd.CheckedChanged, radBasicPlusFamily.CheckedChanged, radPreferredInd.CheckedChanged, radPreferredFamily.CheckedChanged,
+        radDeluxeInd.CheckedChanged, radDeluxeFamily.CheckedChanged, radTrainerInd.CheckedChanged, radTrainerFamily.CheckedChanged
 
         Dim i As Integer
+        Dim j As Integer
 
         For i = 0 To arrRadPlans.Length - 1
             If arrRadPlans(i).Checked Then
                 lblTotal.Text = FormatCurrency(arrPlanCosts(i))
             End If
+
+        Next
+        For j = 0 To arrRadTrainers.Length - 1
+            If arrRadTrainers(j).Checked Then
+                lblTotal.Text = FormatCurrency(lblTotal.Text + arrTrainerPlans(j))
+            End If
         Next
 
 
     End Sub
+
+    'Private Sub radTrainerInd_CheckedChanged(sender As Object, e As EventArgs) Handles radTrainerInd.CheckedChanged, radTrainerFamily.CheckedChanged
+    '    Dim i As Integer
+
+    '    For i = 0 To arrRadTrainers.Length - 1
+    '        If arrRadTrainers(i).Checked Then
+    '            lblTotal.Text = FormatCurrency(arrPlanCosts(i) + arrTrainerPlans(i))
+    '        End If
+    '    Next
+    'End Sub
+
+
 End Class
